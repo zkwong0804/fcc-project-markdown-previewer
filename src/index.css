@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('lofi-city.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.window {
+  height: 80vh;
+  width: 40vw;
+  margin: 3vh 1rem 3vh 1rem;
+  border: 0.2vw solid rgba(255, 255, 255, 0.25);
+}
+
+.window-header {
+  background-color: #1a237e;
+  color: #9fa8da;
+  margin: 0;
+  padding: 1rem 0.5rem;
+  font-family: 'Press Start 2P', cursive;
+  padding: 2vh;
+  font-size: 4vh;
+  overflow-wrap: break-word;
+}
+
+#editor, #preview {
+  /* background-color: #9fa8da; */
+  background-color: rgba(159, 168, 218, 0.7);
+  width: 100%;
+}
+
+#editor {
+  height: calc(100% - 8vh);
+  padding: 0;
+}
+
+#preview {
+  height: calc(100% - 8vh);
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+}
+
+#preview img {
+  max-width: 80%;
+}
+
+#preview pre {
+  background-color: white;
+  padding: 1rem;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 800px) {
+  .desktop {
+    flex-direction: column;
+  }
+
+  .window {
+    width: 80vw;
+  }
+}
