@@ -3,6 +3,18 @@ const markdown = `# Welcome to my React Markdown Previewer!
 ## This is a sub-heading...
 ### And here's some other cool stuff:
 
+Heres some code, \`<div></div>\`, between 2 backticks.
+
+\`\`\`
+// this is multi-line code:
+
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+    return multiLineCode;
+  }
+}
+\`\`\`
+
 You can also make text **bold**... whoa!
 Or _italic_.
 Or... wait for it... **_both!_**
@@ -29,6 +41,7 @@ And here. | Okay. | I think we get it.
 1. And last but not least, let's not forget embedded images:
 
 ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+
 `;
 
 export default markdown;

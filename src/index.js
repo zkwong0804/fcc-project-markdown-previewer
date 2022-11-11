@@ -32,7 +32,7 @@ class Form extends React.Component {
 function Editor(props) {
   return (
     <section className='window window-editor'>
-      <h2 className='window-header'>Editor</h2> 
+      <h2 className='window-header'>Editor</h2>
       <textarea id='editor' name='editor' className='window-body' title='code editor' onChange={props.handleChange} defaultValue={DefaultMarkdown}>
       </textarea>
     </section>
